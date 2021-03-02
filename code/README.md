@@ -45,6 +45,10 @@ To install the dependencies for this project you can run:
 $ pip install -r requirements.txt
 `
 
+## Jupyter Notebook
+
+You can check the [*Example.ipynb*](Example.ipynb) to see an example on the workflow used to apply Hough Circles
+
 
 ## Running from terminal
 
@@ -59,6 +63,7 @@ This will open an OpenCV GUI with sliders to change some parameters
 ![gui](img/gui.png)
 
 The right one is the post-processed one, with canny included, so you can see what is the impact of your pre-processing
+
 
 
 
