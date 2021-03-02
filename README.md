@@ -5,11 +5,11 @@ This repository is my journey exploring the Hough Circle Transform application u
 
 ## Hough Transform Theory
 
-This transform is a feature extraction technique used to detect simple geometric forms that can be easily parameterized such as lines, circles, or ellipses. 
+This transform is a feature extraction technique used in images to detect simple geometric forms that can be easily parameterized, such as lines, circles, or ellipses. 
 
-For the desired geometric form we define an equation to represent it. If we got a line, that can be described as  <!-- $\rho = x*cos(\theta) + y*sin(\theta)$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5Crho%20%3D%20x*cos(%5Ctheta)%20%2B%20y*sin(%5Ctheta)">. Then we have two parameters:  <!-- $\rho$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5Crho"> and <!-- $\theta$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5Ctheta"> , that define a space of possibilities for our lines.
+For the desired geometric form, we define an equation to represent it. A line can be described as  <!-- $\rho = x*cos(\theta) + y*sin(\theta)$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5Crho%20%3D%20x*cos(%5Ctheta)%20%2B%20y*sin(%5Ctheta)">. , for example, then the two parameters:  <!-- $\rho$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5Crho"> and <!-- $\theta$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5Ctheta"> defines a space of possibilities for our lines.
 
-What the transform does is map every pixel on our image to a curve in the parameters space. If a point in this space is the intersection of many curves, there is a high probability that this point describes a line in the image.
+What the transform does is map every pixel on our image to a curve in the parameters space. If a point in this space is the intersection of many curves, there is a high probability it describes a line in the image.
 
 ### Example
 
